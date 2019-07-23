@@ -1,5 +1,5 @@
 {
-  "name": "vue-cms-czj",
+  "name": "vue-cms",
   "version": "1.0.0",
   "description": "1. git add .\r 2. git commit -m \"提交信息\"\r 3. git push",
   "main": "webpack.config.js",
@@ -12,10 +12,10 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+    "babel-plugin-component": "^1.1.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1",
-    "babel-plugin-component": "^1.1.1",
     "bootstrap": "^3.3.7",
     "css-loader": "^3.1.0",
     "file-loader": "^4.1.0",
@@ -27,6 +27,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^2.1.0",
+    "vue-resource": "^1.5.1",
     "vue-router": "^3.0.7",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.36.1",
