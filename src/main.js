@@ -22,13 +22,24 @@ import moment from 'moment'
 Vue.filter('dateFormat', function (dataStr, pattern = "YYYY-MM-DD HH:mm:ss") {
   return moment(dataStr).format(pattern)
 })
+
+// 安装 图片预览插件
+import VuePreview from 'vue-preview'
+
+// defalut install
+Vue.use(VuePreview)
+ 
 // mint ui
 // 按需导入 Mint-UI 中的组件   
-import { Header, Swipe, SwipeItem, Button } from 'mint-ui'
+/* import { Header, Swipe, SwipeItem, Button, Lazyload } from 'mint-ui'
 Vue.component(Header.name, Header)
 Vue.component(Swipe.name, Swipe)
 Vue.component(SwipeItem.name, SwipeItem)
 Vue.component(Button.name, Button)
+Vue.use(Lazyload); */
+import MintUI from 'mint-ui'
+Vue.use(MintUI)
+import 'mint-ui/lib/style.css'
 
 var vm  = new Vue({
     el:'#app',
