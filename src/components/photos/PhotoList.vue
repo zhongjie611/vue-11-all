@@ -76,7 +76,7 @@ export default {
 
 <style lang="scss" scoped>
 * {
-  touch-action: pan-y;
+    touch-action: pan-y;
 }
 
 .photo-list {
