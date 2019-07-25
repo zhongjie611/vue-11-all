@@ -61,8 +61,8 @@ export default {
             console.info(item);
             item.msrc = item.src;
             item.alt = "";
-            //item.w = 600;
-            item.h = 100;
+            item.w = 600;
+            item.h = 400;
           });
           // 把完整的数据保存到 list 中
           this.list = result.body.message;
