@@ -1,5 +1,7 @@
 <template>
   <div>
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://m.sui.taobao.org/assets/css/demos.css">
 <div class="content native-scroll">
     <div class="list-block">
       <ul>
@@ -101,8 +103,9 @@
   </div>
 </template>
 <script>
+
 export default {};
 </script>
 <style lang="scss" scoped >
- 
+
 </style>
