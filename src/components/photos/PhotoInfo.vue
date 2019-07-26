@@ -6,19 +6,16 @@
       <span>点击：{{ photoinfo.click }}次</span>
     </p>
 
-    <hr />
+    <hr>
 
     <!-- 缩略图区域 -->
     <div class="thumbs">
       <img class="preview-img" v-for="(item, index) in list" :src="item.src" height="100" @click="$preview.open(index, list)" :key="item.src">
-      <!-- <img class="preview-img" v-for="(item, index) in list" :src="item.src" height="100" @click="$preview.openPhotoSwipe(index, list)" :key="item.src"> -->
-      <!-- <vue-preview :slides="slide1" @close="handleClose"></vue-preview> -->
-      <!-- <vue-preview class="preview-img" :slides="list" @close="handleClose"></vue-preview> -->
     </div>
-
+ 
     <!-- 图片内容区域 -->
-    <div class="content" v-html="photoinfo.content"></div>
-
+    <div class="content_t" v-html="photoinfo.content"></div>
+ 
     <!-- 放置一个现成的 评论子组件 -->
     <cmt-box :id="id"></cmt-box>
   </div>
@@ -49,18 +46,12 @@ export default {
         }
       });
     },
-    handleClose() {
-      console.log("close event");
-    },
     getThumbs() {
       // 获取缩略图
       this.$http.get("api/getthumimages/" + this.id).then(result => {
         if (result.body.status === 0) {
           // 循环每个图片数据，补全图片的宽和高
           result.body.message.forEach(item => {
-            console.info(item);
-            item.msrc = item.src;
-            item.alt = "";
             item.w = 600;
             item.h = 400;
           });
@@ -92,12 +83,12 @@ export default {
     font-size: 13px;
   }
 
-  .content {
+  .content_t {
     font-size: 13px;
     line-height: 30px;
   }
 
-   .thumbs{
+  .thumbs{
     img{
       margin: 10px;
       box-shadow: 0 0 8px #999;
