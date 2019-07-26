@@ -32,8 +32,9 @@ Vue.http.options.emulateJSON = true;
 import './lib/mui/css/mui.min.css'
 // 导入扩展图标样式
 import './lib/mui/css/icons-extra.css'
-
-
+import './lib/sui/css/sm.min.css'
+import './lib/sui/assets/css/demos.css'
+ 
 // 按需导入 Mint-UI 中的组件   
 /* import { Header, Swipe, SwipeItem, Button, Lazyload } from 'mint-ui'
 Vue.component(Header.name, Header)
@@ -44,7 +45,7 @@ Vue.use(Lazyload); */
 import MintUI from 'mint-ui'
 Vue.use(MintUI)
 import 'mint-ui/lib/style.css'
-
+  
 
 // 安装 图片预览插件
 import VuePreview from 'vue-preview'

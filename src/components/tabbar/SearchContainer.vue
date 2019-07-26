@@ -1,7 +1,6 @@
 <template>
 
 <div class="bar bar-header-secondary">
-  <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.css">
   <div class="searchbar">
     <a class="searchbar-cancel">取消</a>
     <div class="search-input">
