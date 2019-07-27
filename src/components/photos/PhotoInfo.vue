@@ -37,6 +37,10 @@ export default {
     this.getPhotoInfo();
     this.getThumbs();
   },
+  beforeDestroy(){
+    console.info( this);
+    this.$preview.close();
+  },
   methods: {
     getPhotoInfo() {
       // 获取图片的详情
